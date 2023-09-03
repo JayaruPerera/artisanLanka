@@ -23,6 +23,8 @@
 
         <!-- css styles -->
         <link rel="stylesheet" href="home.css">
+        <!-- image slider css -->
+        <link rel="stylesheet" href="img_slider.css">
 
     </head>
 
@@ -83,7 +85,7 @@
                     </form>
 
                     <div class="cart">
-                        <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart-icon" style="color: #000000;"><sup style="font-size: 14px;">0</sup></i></a>  
+                        <a href="#"><i class="fa-solid fa-cart-shopping fa-xl cart-icon" style="color: #000000;"></i></a>  
                     </div>
                 </div>
             </div>     
@@ -194,7 +196,42 @@
 
                     <!-- img slider start -->
                     <div class="img-slider">
-
+                        <div class="slides">
+                            <!--radio buttons start-->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <!--radio buttons end-->
+                            <!--slide images start-->
+                            <div class="slide first text-center">
+                                <img src="/assets/traditional_mask.png" 
+                                alt="Discover the Fascinating World of Sri Lankan Traditional Masks">
+                            </div>
+                            <div class="slide">
+                                <img src="/assets/ceramic_craft.png" 
+                                alt="Exploring the Beauty of Sri Lankan Ceramic Craftsmanship">
+                            </div>
+                            <div class="slide">
+                                <img src="/assets/bathic.png" 
+                                alt="Unveiling the Colors and Patterns of Sri Lanka">
+                            </div>
+                            <!--slide images end-->
+                            <!--automatic navigation start-->
+                            <div class="navigation-auto">
+                              <div class="auto-btn1"></div>
+                              <div class="auto-btn2"></div>
+                              <div class="auto-btn3"></div>
+                            </div>
+                            <!--automatic navigation end-->
+                        </div>
+                          <!--manual navigation start-->
+                          <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                          </div>
+                          <!--manual navigation end-->
                     </div>
                     <!-- img slider end -->
 
@@ -454,6 +491,17 @@
             </div>
         </div>
         <!-- footer end -->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if(counter > 3){
+                counter = 1;
+              }
+            }, 5000);
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
