@@ -22,9 +22,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
         <!-- css styles -->
-        <link rel="stylesheet" href="home.css">
-        <!-- image slider css -->
-        <link rel="stylesheet" href="img_slider.css">
+        <link rel="stylesheet" href="one_item.css">
 
     </head>
 
@@ -45,7 +43,7 @@
                                 <a class="n-link" aria-current="page" href="/Products/products.html">PRODUCTS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="n-link" aria-current="page" href="/SignIn/sign.html">SELLERS</a>
+                                <a class="n-link" aria-current="page" href="#">SELLERS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="n-link" aria-current="page" href="#">CONTACT</a>
@@ -178,62 +176,38 @@
                 <!-- product area start -->
                 <div class="col-md-9 product">
 
-                    <div class="row align-items-center product-navbar">             
-                        <div class="col-md-6 product-item-div">
-                            <ul class="navbar me-auto m-0 mb-2 mb-lg-0 product-navbar">
-                                <li class="top-item">
-                                    <a class="n-link" aria-current="page" href="#">Summer Deals</a>
-                                </li>
-                                <li class="top-item">
-                                    <a class="n-link" aria-current="page" href="#">Super Deals</a>
-                                </li>
-                                <li class="top-item">
-                                    <a class="n-link" aria-current="page" href="#">New User Deals</a>
-                                </li>
-                            </ul>
-                        </div>                     
-                    </div>
+                    <div class="filter p-3">
+                        <div class="row p-2">
+                            <div class="col-md-6">
+                                <div class="product-row">
+                                    <p><span>Products</span> > <span>Clothing</span> > <span>Saree</span></p>
+                                    
+                                </div>
+                                <div class="price-row">
+                                    <p>Price:</p>
+                                </div>
+                                <div class="size-row">
+                                    <p>Size:</p>
+                                </div>
+                            </div>
 
-                    <!-- img slider start -->
-                    <div class="img-slider">
-                        <div class="slides">
-                            <!--radio buttons start-->
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <input type="radio" name="radio-btn" id="radio4">
-                            <!--radio buttons end-->
-                            <!--slide images start-->
-                            <div class="slide first text-center">
-                                <img src="/assets/traditional_mask.png" 
-                                alt="Discover the Fascinating World of Sri Lankan Traditional Masks">
+                            <div class="col-md-6">
+                                <div class="material-row">
+                                    <p>Material:</p>
+                                    <ul class="material">
+                                        <form action="">
+                                            <input type="checkbox" id="silk" name="silk" value="silk">
+                                            <label for="silk"> Silk </label><br>
+                                            <input type="checkbox" id="cotton" name="cotton" value="cotton">
+                                            <label for="cotton"> Cotton </label><br>
+                                            <input type="checkbox" id="linen" name="linen" value="linen">
+                                            <label for="linen"> Linen </label><br><br>
+                                        </form>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="slide">
-                                <img src="/assets/ceramic_craft.png" 
-                                alt="Exploring the Beauty of Sri Lankan Ceramic Craftsmanship">
-                            </div>
-                            <div class="slide">
-                                <img src="/assets/bathic.png" 
-                                alt="Unveiling the Colors and Patterns of Sri Lanka">
-                            </div>
-                            <!--slide images end-->
-                            <!--automatic navigation start-->
-                            <div class="navigation-auto">
-                              <div class="auto-btn1"></div>
-                              <div class="auto-btn2"></div>
-                              <div class="auto-btn3"></div>
-                            </div>
-                            <!--automatic navigation end-->
                         </div>
-                          <!--manual navigation start-->
-                          <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                          </div>
-                          <!--manual navigation end-->
                     </div>
-                    <!-- img slider end -->
 
                     <div class="row product-items">
                         <div class="col-12">
