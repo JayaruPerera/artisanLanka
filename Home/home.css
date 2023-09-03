@@ -120,7 +120,7 @@ body{
     margin-left: 70px;
 }
 .cart-icon{
-    padding: 20px;
+    padding: 22px 9px;
     border-radius: 50px;
     background-color: white;
 }
@@ -231,6 +231,7 @@ body{
     background-color: black; 
     margin: 20px auto 30px auto; 
     border-radius: 30px;
+    overflow: hidden;
 }
 /* img slider end */
 
@@ -267,6 +268,11 @@ body{
     background-size: cover;
     width: 220px;
     height: auto;
+}
+.card-img-top:hover{
+    width: 240px;
+    height: auto;
+    transition: 1s ease-in-out;
 }
 .card-body{
     flex: 1;
