@@ -36,8 +36,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D5D0C7;
+    background-color: rgb(213, 208, 199);
     border-radius: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
 }
 .nav-item-div ul li{
     padding: 6px 15px;
@@ -113,14 +116,30 @@ body{
     height: 30px;
     margin: 6px 0 0 -55px;
 }
+.cart{
+    margin-left: 70px;
+}
+.cart-icon{
+    padding: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
 /* main heading end */
 
 /* product area start */
+
+.row-product{
+    padding: 0 auto;
+}
 /* side navbar */
 .side-nav{
-    background-color: #e0c6ac9f;
-    margin-right: 20px;
-    height: auto;
+    background-color: rgb(224, 198, 172, 0.3);
+    margin-right: 12px;
+    height: fit-content;
+    margin-left: 50px;
+}
+.products{
+    margin-bottom: 0;
 }
 .products li{
     list-style: none; 
@@ -131,16 +150,19 @@ body{
     color: black;
 }
 .products li:hover{
-    background-color: white;
+    background-color: #D5D0C7;
 }
 .products h4{
     background-color: #D5D0C7;
     padding: 6px 15px;
+    margin: 0;
 }
 .nav-item{
     padding: 8px 10px;
 }
-
+.brands{
+    margin-bottom: 0;
+}
 .brands li{
     list-style: none; 
     font-size: 16px;
@@ -150,22 +172,23 @@ body{
     color: black;
 }
 .brands li:hover{
-    background-color: white;
+    background-color: #D5D0C7;
 }
 .brands h4{
     background-color: #D5D0C7;
     padding: 6px 15px;
+    margin: 0;
 }
 /* side navbar end */
 
 /* products side */
-.product-area{
+.product-area{    /* product-area */
     margin: 40px auto 0 auto;
 }
 .product{
-    background-color: #e0c6ac8a;
-    margin-left: 20px;
-    height: 1000px;
+    background-color: rgb(224, 198, 172, 0.3);
+    margin-left: 12px;
+    height: auto;
 }
 .product-navbar{
     width: auto;
@@ -174,12 +197,14 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-right: none;
 }
 .product-item-div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D5D0C7;
+    width: auto;
+    background-color: rgb(213, 208, 199);
     border-radius: 30px;
     margin-top: -20px;
 }
@@ -196,19 +221,95 @@ body{
     border-radius: 30px;
 }
 .top-item{
-    margin-right: 10px; 
+    margin: 0 10px; 
 }
+
+/* img slider start */
+.img-slider{
+    width: 1080px; 
+    height: 350px; 
+    background-color: black; 
+    margin: 20px auto 30px auto; 
+    border-radius: 30px;
+}
+/* img slider end */
+
 .product-items{
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 0 20px;
 }
 .big-item{
     text-align: center;
 }
-.big-item-card{
-    height: 200px;
-    margin: 30px;
-    background-color: rgb(255, 0, 0);
+.big-item-card a{
+    text-decoration: none;
 }
+.card{
+    display: flex;
+    flex-direction: row; /* Arrange children horizontally */
+    align-items: flex-start;
+    height: 260px;
+    width: 530px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(164, 164, 155, 0.3);
+}
+.img-div{
+    flex: 1;
+    max-width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card-img-top{
+    background-size: cover;
+    width: 220px;
+    height: auto;
+}
+.card-body{
+    flex: 1;
+    display: flex; /* Use flexbox for card-body */
+    flex-direction: column; /* Arrange card-body content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    text-align: left;
+    padding-left: 30px;
+}
+.card-body h2{
+    font-size: 20px;
+    margin: 0;
+}
+
 /* products side end */
 /* product area end */
+
+/* footer start*/
+.footer{
+    width: 100%; 
+    height: auto; 
+    background-color: #E0C6AC; 
+    margin-top: 40px;
+}
+.footer-h h4{
+    margin-bottom: 30px;
+}
+.footer-h ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.footer-h ul li{
+    margin-bottom: 10px;
+}
+.footer-h ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer-h ul li a:hover{
+    text-decoration:underline;
+    color: black;
+}
+.contact ul li a{
+    margin-left: 10px;
+}
+/* footer end */
