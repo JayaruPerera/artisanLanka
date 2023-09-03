@@ -236,3 +236,33 @@ img {
     
     /*z-index: -1; /* Place it behind other content */
 }
+
+/* footer start*/
+.footer{
+    width: 100%; 
+    height: auto; 
+    background-color: #E0C6AC; 
+    margin-top: 40px;
+}
+.footer-h h4{
+    margin-bottom: 30px;
+}
+.footer-h ul{
+    list-style: none;
+    padding-left: 10px;
+}
+.footer-h ul li{
+    margin-bottom: 10px;
+}
+.footer-h ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer-h ul li a:hover{
+    text-decoration:underline;
+    color: black;
+}
+.contact ul li a{
+    margin-left: 10px;
+}
+/* footer end */
