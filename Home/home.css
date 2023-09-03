@@ -1,0 +1,36 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #333; /* Change the background color as needed */
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    background-color: #333; /* Change the background color as needed */
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white; /* Change the text color as needed */
+    text-decoration: none;
+    padding: 14px 16px; /* Adjust the padding as needed */
+    display: block;
+}
+
+/* Change the link color when hovering */
+.nav-list a:hover {
+    background-color: #ddd; /* Change the background color on hover as needed */
+    color: black; /* Change the text color on hover as needed */
+}
