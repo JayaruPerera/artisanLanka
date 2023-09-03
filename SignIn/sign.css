@@ -1,0 +1,151 @@
+body {
+    background: radial-gradient(circle at 50% 50%, #63442F, #E0C6AC);
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px; /* Set the desired width */
+     /* Set the desired height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E0C6AC;
+    margin-top: 70px;
+    border-radius: 20px;
+     /* Background color */
+}
+
+/* Style the left side (picture) */
+.left {
+    width: 50%; /* Half of the container width */
+    padding: 0px; /* Add spacing around the picture */
+    box-sizing: border-box;
+    margin-left: -11px; /* Include padding in width calculation */
+}
+
+.left img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block;
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+/* Style the right side (content) */
+.right {
+    width: 50%; /* Half of the container width */
+     /* Add spacing around the content */
+    box-sizing: border-box; /* Include padding in width calculation */
+     /* Content background color */
+}
+/* right box */
+/* .signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+} */
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #333; /* Change the color as needed */
+    padding: 5px;
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Hide the default input border on focus */
+input[type="text"]:focus {
+    border-color: #63442F; /* Change the focus color as needed */
+}
+
+
+/* img {
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* styles.css right box*/
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;background-color: #63442F;
+    backdrop-filter: blur(90px); /* Adjust the blur amount as needed */
+    background-color: rgba(164, 155, 156, 0.48); /* Updated background color with transparency */
+    border-radius: 10px;
+    padding: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.signin-content {
+    
+    border-radius: 10px;
+    padding: 20px;
+    
+    text-align: center;
+    
+}
+
+.logo img {
+    width: 143px;
+    height: 70px; /* Adjust the size of the logo as needed */
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: azure;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: aliceblue;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #63442F;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #63442f71;
+}
+
+p{
+    align-items: center;
+    font-size: 12px;
+}
+
+.or{
+    margin-top: 10px;
+}
