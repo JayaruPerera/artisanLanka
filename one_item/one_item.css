@@ -270,7 +270,7 @@ body{
     flex-direction: row; /* Arrange children horizontally */
     align-items: flex-start;
     height: 260px;
-    width: 530px;
+    width: 600px;
     padding: 20px;
     border-radius: 20px;
     border: none;
