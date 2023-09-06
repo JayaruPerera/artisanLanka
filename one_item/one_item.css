@@ -192,6 +192,7 @@ body{
 }
 
 /* filter area start */
+
 .product-row span{
     font-size: 18px;
     font-weight: 500;
@@ -199,37 +200,63 @@ body{
 .price-row p{
     font-size: 18px;
     font-weight: 500;
+    margin: 0;
+    margin-right: 10px;
+}
+.size-row{
+    display: flex;
 }
 .size-row p{
     font-size: 18px;
     font-weight: 500;
+    margin-right: -40px;
 }
 .material-row p{
     font-size: 18px;
     font-weight: 500;
 }
+.material{
+    font-size: 18px;
+    font-weight: 400;
+}
+.price-row{
+    display: flex;
+    margin-bottom: 20px;
+}
+.price{
+    display: flex;
+}
+.price p{
+    font-weight: 500;
+    margin-left: 5px;
+}
+.price-box{
+    margin-right: 5px;
+    border: none;
+    width: 80px;
+}
+.size{
+    display: flex;
+}
+.size-ul{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.ul-label{
+    margin-left: 20px;
+}
+.input-box{
+    margin-left: 5px;
+    border: none;
+    border-radius: none;
+    width: 20px;
+}
 /* filter area end */
 
 
 
-
-
-
-
-
-/* img slider start */
-.img-slider{
-    width: 1080px; 
-    height: 350px; 
-    background-color: black; 
-    margin: 20px auto 30px auto; 
-    border-radius: 30px;
-    overflow: hidden;
-}
-/* img slider end */
-
 .product-items{
-    margin-top: 30px;
     padding: 0 20px;
 }
 .big-item{
